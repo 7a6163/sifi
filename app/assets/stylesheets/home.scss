@@ -1,0 +1,95 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header-content > h1 {
+  text-align: center;
+  color: white;
+  font-size: 500%;
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header-content > p {
+  text-align: center;
+  color: white;
+  font-size: 200%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.home {
+  background: linear-gradient(#4bbfc3, #4bbfc3);
+}
+
+.surpassing {
+  background: linear-gradient(#969ac6, #636f8f);
+}
+
+.innovation {
+  background: linear-gradient(#7baabe, #969ac6);
+}
+
+.fantastic {
+  background: linear-gradient(#B375B0, #D88A95);
+}
+
+.international {
+  background: linear-gradient(#C1AD6E, #76c2bd);
+}
+
+.services {
+  background: linear-gradient(#7BAABE, #7BAABE);
+  color: white;
+}
+
+.contact {
+  background: #E0595B;
+}
+
+.services-row {
+  margin-top: 5%;
+}
+
+.contact-row {
+  margin-top: 10%;
+  color: white;
+  text-align: center;
+}
+
+.contact-row a {
+  color: white          !important;
+  text-decoration: none !important;
+}
+
+
+.logo {
+  position: absolute;
+  margin: 3% 0 0 3%;
+  z-index: 1;
+  width: 7%;
+  top: 0;
+}
+
+
+.contact-row a::before, .contact-row a::after {
+    display: inline-block;
+    opacity: 0;
+    transition: transform 0.3s ease 0s, opacity 0.2s ease 0s;
+}
+.contact-row  a::before {
+    content: "[";
+    margin-right: 5px;
+    transform: translateX(20px);
+}
+
+
+.contact-row a::after {
+    content: "]";
+    margin-left: 5px;
+    transform: translateX(-20px);
+}
+.contact-row a:hover::before, .contact-row a:hover::after, .contact-row a:focus::before, .contact-row a:focus::after {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
