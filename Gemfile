@@ -52,7 +52,7 @@ group :development, :test do
 end
 
 
-grounp :production do
+group :production do
   gem 'rails_12factor'
 end
 
