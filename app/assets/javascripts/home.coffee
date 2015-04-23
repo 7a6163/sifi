@@ -5,7 +5,7 @@
 
 $ ->
   $('#fullpage').fullpage({
-    navigationTooltips: ['SIFI', 'SURPASSING', 'INNOVATION', 'FANTASTIC', 'INTERNATION', 'SERVICE', 'CONTACT'],
+    navigationTooltips: ['SIFI', 'SURPASSING', 'INNOVATION', 'FANTASTIC', 'INTERNATIONAL', 'SERVICE', 'CONTACT'],
     showActiveTooltips: true,
     navigation: true
     })
