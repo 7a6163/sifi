@@ -7,4 +7,13 @@ $ ->
   $('#fullpage').fullpage({
     navigation: true;
     })
+
+  $('#service').click ->
+    $.fn.fullpage.moveTo 6
+    return
+
+  $('#contact').click ->
+    $.fn.fullpage.moveTo 7
+    return
+
   return

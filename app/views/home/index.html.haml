@@ -1,4 +1,12 @@
-
+%nav#navbar-sifi.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right{ "role" => "tablist" }
+        %li
+          = link_to("SERVICE", "#service", :id => "service")
+        %li
+          = link_to("CONTACT", "#contact", :id => "contact")
 #fullpage
   .section.home
     = image_tag "logo.png", :class => "logo"
