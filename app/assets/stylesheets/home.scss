@@ -71,27 +71,52 @@
 }
 
 
-.contact-row a::before, .contact-row a::after {
-    display: inline-block;
-    opacity: 0;
-    transition: transform 0.3s ease 0s, opacity 0.2s ease 0s;
-}
-.contact-row  a::before {
-    content: "[";
-    margin-right: 5px;
-    transform: translateX(20px);
-}
+// .contact-row a::before, .contact-row a::after {
+//     display: inline-block;
+//     opacity: 0;
+//     transition: transform 0.3s ease 0s, opacity 0.2s ease 0s;
+// }
+// .contact-row  a::before {
+//     content: "[";
+//     margin-right: 5px;
+//     transform: translateX(20px);
+// }
 
 
+// .contact-row a::after {
+//     content: "]";
+//     margin-left: 5px;
+//     transform: translateX(-20px);
+// }
+// .contact-row a:hover::before, .contact-row a:hover::after, .contact-row a:focus::before, .contact-row a:focus::after {
+//     opacity: 1;
+//     transform: translateX(0px);
+// }
+
+
+.contact-row a {
+  //padding: 0 0 10px;
+}
 .contact-row a::after {
-    content: "]";
-    margin-left: 5px;
-    transform: translateX(-20px);
+    background: none repeat scroll 0 0 #fff;
+    content: "";
+    height: 1px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-10px);
+    transition: height 0.3s ease 0s, opacity 0.3s ease 0s, transform 0.3s ease 0s;
+    width: 100%;
 }
-.contact-row a:hover::before, .contact-row a:hover::after, .contact-row a:focus::before, .contact-row a:focus::after {
+.contact-row a:hover::after, .contact-row a:focus::after {
+    height: 5px;
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateY(0px);
 }
+
+
+
 
 #navbar-sifi {
   background-color: transparent;
@@ -101,6 +126,26 @@
 
 #navbar-sifi a {
   color: white;
-  font-size: 20px;
+  font-size: 180%;
+  margin-left: 10%;
+  font-family: 'Raleway', sans-serif;
+  opacity: 0.7;
+  padding: 0 0 10;
 }
-
+#navbar-sifi a::after {
+  background: none repeat scroll 0 0 #fff;
+  content: "";
+  height: 1px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-10px);
+  transition: height 0.3s ease 0s, opacity 0.3s ease 0s, transform 0.3s ease 0s;
+  width: 100%;
+}
+#navbar-sifi a:hover::after, #navbar-sifi a:focus::after {
+  height: 5px;
+  opacity: 1;
+  transform: translateY(0px);
+}

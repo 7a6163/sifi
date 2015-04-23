@@ -3,10 +3,10 @@
     .navbar-header
     .collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right{ "role" => "tablist" }
-        %li
-          = link_to("服務", "#service", :id => "service")
-        %li
-          = link_to("聯絡我們", "#contact", :id => "contact")
+        %li#service
+          = link_to "服務", "#"
+        %li#contact
+          = link_to "聯絡我們", "#"
 #fullpage
   .section.home
     = image_tag "logo.png", :class => "logo"
@@ -46,28 +46,28 @@
         %h1 OUR SERVICES
         .container
           .row.services-row
-            .col-md-4.text-center
+            .col-xs-6.col-md-4.text-center
               = icon('magic', '', class: 'fa-3x')
               %h3 客製化軟硬體
               %h4 Customize Software / Hardware
-            .col-md-4.text-center
+            .col-xs-6.col-md-4.text-center
               = icon('laptop', '', class: 'fa-3x')
               %h3 伺服器架設
               %h4 Server Building
-            .col-md-4.text-center
+            .col-md-4.col-xs-12.text-center
               = icon('html5', '', class: 'fa-3x')
               %h3 網頁設計
               %h4 Web Design
           .row.services-row
-            .col-md-4.text-center
+            .col-md-4.col-xs-6.text-center
               = icon('cloud', '', class: 'fa-3x')
               %h3 雲端架構
               %h4 Cloud Architecture
-            .col-md-4.text-center
+            .col-md-4.col-xs-6.text-center
               = icon('heart', '', class: 'fa-3x')
               %h3 醫療資訊系統
               %h4 Medical Information System
-            .col-md-4.text-center
+            .col-md-4.col-xs-12.text-center
               = icon('globe', '', class: 'fa-3x')
               %h3 其他系統
               %h4 Other System
@@ -79,16 +79,17 @@
         %h1 CONTACT US
         .container
           .row.contact-row
-            .col-md-3
+            .col-md-3.col-xs-6
               = icon("map-marker", "", class: 'fa-3x')
-              %h3 台北市大安區<br>基隆路二段 136 號 9F
-            .col-md-3
+              %h3
+                = link_to "台北市大安區基隆路二段 136 號 9F", "https://goo.gl/maps/2T78Z"
+            .col-md-3.col-xs-6
               = icon("envelope", "", class: 'fa-3x')
               %h3
                 = link_to "service@sifi.com.tw", "mailto:service@sifi.com.tw"
-            .col-md-3
+            .col-md-3.col-xs-6
               = icon("phone", "", class: 'fa-3x')
-              %h3 (02) 2732-1098
-            .col-md-3
+              %h3 (02) 2732 - 1098
+            .col-md-3.col-xs-6
               = icon("fax", "", class: 'fa-3x')
-              %h3 (02) 2732-1075
+              %h3 (02) 2732 - 1075

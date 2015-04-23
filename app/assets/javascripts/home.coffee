@@ -10,12 +10,18 @@ $ ->
     navigation: true
     })
 
+  # $.fn.fullpage.moveTo('sevice', 6)
+
+  # $.fn.fullpage.moveTo('contact', 7)
+
   $('#service').click ->
-    $.fn.fullpage.moveTo 6
+    $('#fullpage').fullpage.moveTo 6
+    false
     return
 
   $('#contact').click ->
     $.fn.fullpage.moveTo 7
+    false
     return
 
   return
