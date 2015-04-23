@@ -5,7 +5,9 @@
 
 $ ->
   $('#fullpage').fullpage({
-    navigation: true;
+    navigationTooltips: ['SIFI', 'SURPASSING', 'INNOVATION', 'FANTASTIC', 'INTERNATION', 'SERVICE', 'CONTACT'],
+    showActiveTooltips: true,
+    navigation: true
     })
 
   $('#service').click ->
