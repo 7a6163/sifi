@@ -15,5 +15,3 @@
 //= require jquery.fullPage
 //= require turbolinks
 //= require_tree .
-
-
