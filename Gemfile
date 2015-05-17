@@ -29,6 +29,18 @@ gem 'haml-rails'
 
 gem 'font-awesome-sass'
 
+
+gem 'capistrano', '~> 3.1.0'
+
+# rails specific capistrano funcitons
+gem 'capistrano-rails', '~> 1.1.1'
+
+# integrate bundler with capistrano
+gem 'capistrano-bundler'
+
+gem 'capistrano-rbenv', '~> 2.0'
+
+
 #gem 'rails_12factor'
 
 # Use ActiveModel has_secure_password
